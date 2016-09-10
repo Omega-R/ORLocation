@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ORLocation_Example' do
+  pod 'ORLocation', :path => '../'
+
+  target 'ORLocation_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

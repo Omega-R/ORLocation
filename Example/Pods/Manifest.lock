@@ -1,0 +1,16 @@
+PODS:
+  - ORLocation (0.1.0)
+
+DEPENDENCIES:
+  - ORLocation (from `../`)
+
+EXTERNAL SOURCES:
+  ORLocation:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ORLocation: 716d26cc328203222b5adc26ddb3b5b10ca9c8da
+
+PODFILE CHECKSUM: 343ab60f954acac83080a0996e7f7251dd57c545
+
+COCOAPODS: 1.0.1
