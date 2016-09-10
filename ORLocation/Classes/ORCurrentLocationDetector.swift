@@ -20,13 +20,13 @@ public typealias ORCurrentLocationDetectorCompletion = (location: CLLocation?) -
     
     private var detectionAwaitingTimer: NSTimer?
 
-    override init() {
+    @objc public override init() {
         super.init()
         locationManager.delegate = self
     }
     
-    public func detect(desiredAccuracy desiredAccuracy: CLLocationAccuracy = kCLLocationAccuracyNearestTenMeters, maxTimeToWaitDetection: NSTimeInterval? = nil, completion: ORCurrentLocationDetectorCompletion) {
-        self.maxTimeToWaitDetection = maxTimeToWaitDetection
+    @objc public func detect(desiredAccuracy desiredAccuracy: CLLocationAccuracy = kCLLocationAccuracyNearestTenMeters, maxTimeToWaitDetection: NSTimeInterval = NSTimeInterval.infinity, completion: ORCurrentLocationDetectorCompletion) {
+        self.maxTimeToWaitDetection = maxTimeToWaitDetection != NSTimeInterval.infinity ? maxTimeToWaitDetection : nil
         self.completion = completion
         
         locationManager.desiredAccuracy = desiredAccuracy
