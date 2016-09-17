@@ -3,10 +3,9 @@
 //  Pods
 //
 //  Created by Maxim Soloviev on 15/07/16.
-//  
+//  Copyright © 2016 Maxim Soloviev. All rights reserved.
 //
 
-import UIKit
 import CoreLocation
 
 public typealias ORCurrentLocationDetectorCompletion = (location: CLLocation?) -> Void

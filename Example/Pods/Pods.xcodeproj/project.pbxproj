@@ -13,6 +13,7 @@
 		66F9CF2EB5608A706E53341A4A87B327 /* ORLocation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E3E8EE72725548734031FFEF03BF4035 /* ORLocation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7F20BC2D69341EAB3F8305BE890274C0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF5C4E1FA3A269BCA07B8D5D73BF084 /* CoreLocation.framework */; };
 		81679A35C242CBEE3C1CFFE93CE1A837 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B46287475F7F66F2FC3EF4D5A733D10 /* Foundation.framework */; };
+		94228F2C1D8DE83E00793BE0 /* ORMapsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94228F2B1D8DE83E00793BE0 /* ORMapsHelper.swift */; };
 		96D51D4DAC0784B9BF9B6732A680268F /* Pods-ORLocation_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A3FD236FCEAC2AC8EF2A256962DCB4C0 /* Pods-ORLocation_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9861244D848E9B03015101603BF8483B /* Pods-ORLocation_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61DC0D9875937C8755371050CF435211 /* Pods-ORLocation_Example-dummy.m */; };
 		DDE950E4307FEB6F24C1387E9DD0AE94 /* Pods-ORLocation_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EFED71F047F892E9780679489353597 /* Pods-ORLocation_Tests-dummy.m */; };
@@ -49,6 +50,7 @@
 		8B46287475F7F66F2FC3EF4D5A733D10 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		8D7B3EC45C849EA5F840DBBB196AF0F2 /* Pods-ORLocation_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ORLocation_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94228F2B1D8DE83E00793BE0 /* ORMapsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ORMapsHelper.swift; sourceTree = "<group>"; };
 		94E6E60B8526767CA333EA89AC57EC8D /* Pods-ORLocation_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ORLocation_Example-umbrella.h"; sourceTree = "<group>"; };
 		976197FE93FD6FDDE9ADE6672C396CA5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		A3FD236FCEAC2AC8EF2A256962DCB4C0 /* Pods-ORLocation_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ORLocation_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				DEFF5E04C9E298B50C74FF52FF15C639 /* ORCurrentLocationDetector.swift */,
+				94228F2B1D8DE83E00793BE0 /* ORMapsHelper.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0099AF1ABFEADE8261830B63E7CF17F /* ORCurrentLocationDetector.swift in Sources */,
+				94228F2C1D8DE83E00793BE0 /* ORMapsHelper.swift in Sources */,
 				473C70289C58A94F241765AC4A194B27 /* ORLocation-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

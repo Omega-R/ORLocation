@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ORLocation'
-  s.version          = '0.2.0'
+  s.version          = '0.3.0'
   s.summary          = 'ORLocation - helpers to work with location services, etc.'
 
 # This description is used to generate tags and improve search results.
@@ -17,7 +17,8 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = "ORCurrentLocationDetector - simple way to detect current user location with completion block."
+  s.description      = "ORCurrentLocationDetector - simple way to detect current user location with completion block.
+ORMapsHelper - mapItemWithCoordinate & mapItemsForAddress."
 
   s.homepage         = 'https://bitbucket.org/omegarinc/orlocation'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -35,6 +36,6 @@ Pod::Spec.new do |s|
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'UIKit', 'CoreLocation'
+  s.frameworks = 'CoreLocation', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
