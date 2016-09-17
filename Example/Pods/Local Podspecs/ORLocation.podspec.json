@@ -1,8 +1,8 @@
 {
   "name": "ORLocation",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "summary": "ORLocation - helpers to work with location services, etc.",
-  "description": "ORCurrentLocationDetector - simple way to detect current user location with completion block.",
+  "description": "ORCurrentLocationDetector - simple way to detect current user location with completion block.\nORMapsHelper - mapItemWithCoordinate & mapItemsForAddress.",
   "homepage": "https://bitbucket.org/omegarinc/orlocation",
   "license": {
     "type": "MIT",
@@ -13,14 +13,14 @@
   },
   "source": {
     "git": "https://bitbucket.org/omegarinc/orlocation.git",
-    "tag": "0.2.0"
+    "tag": "0.3.0"
   },
   "platforms": {
     "ios": "8.0"
   },
   "source_files": "ORLocation/Classes/**/*",
   "frameworks": [
-    "UIKit",
-    "CoreLocation"
+    "CoreLocation",
+    "MapKit"
   ]
 }

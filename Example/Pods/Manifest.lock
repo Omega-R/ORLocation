@@ -1,5 +1,5 @@
 PODS:
-  - ORLocation (0.2.0)
+  - ORLocation (0.3.0)
 
 DEPENDENCIES:
   - ORLocation (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  ORLocation: 08aa8441b355b7ecbfb27f272c526c778c243203
+  ORLocation: d0a7993d2cc2ebcfcc37df4deed8dfaf88882523
 
 PODFILE CHECKSUM: 343ab60f954acac83080a0996e7f7251dd57c545
 
