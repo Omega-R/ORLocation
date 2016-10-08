@@ -9,33 +9,33 @@
 import Foundation
 import MapKit
 
-public typealias ORGeoSearchResponseBlock = (items: [MKMapItem]?, error: NSError?) -> Void
+public typealias ORGeoSearchResponseBlock = (_ items: [MKMapItem]?, _ error: Error?) -> Void
 
-@objc public class ORMapsHelper: NSObject {
+@objc open class ORMapsHelper: NSObject {
     
-    public static func mapItemWithCoordinate(coordinate: CLLocationCoordinate2D, addressInfo info:[String: String]?) -> MKMapItem {
+    open static func mapItemWithCoordinate(_ coordinate: CLLocationCoordinate2D, addressInfo info:[String: String]?) -> MKMapItem {
         let mark = MKPlacemark(coordinate: coordinate, addressDictionary: info)
         return MKMapItem(placemark: mark)
     }
     
-    public static func mapItemsForAddress(address: String, completion: ORGeoSearchResponseBlock) {
+    open static func mapItemsForAddress(_ address: String, completion: @escaping ORGeoSearchResponseBlock) {
         let geocoder = CLGeocoder()
         
-        geocoder.geocodeAddressString(address, completionHandler: {(placemarks: [CLPlacemark]?, error: NSError?) -> Void in
+        geocoder.geocodeAddressString(address) { (placemarks, error) in
             guard let array = placemarks else {
-                completion(items: nil, error: error)
+                completion(nil, error)
                 return
             }
             
             var items = [MKMapItem]()
             
             for mark in array {
-                if let addressDict = mark.addressDictionary as? [String:AnyObject]?, coordinate = mark.location?.coordinate {
+                if let addressDict = mark.addressDictionary as? [String:AnyObject]?, let coordinate = mark.location?.coordinate {
                     let mkPlacemark = MKPlacemark(coordinate: coordinate, addressDictionary: addressDict)
                     items.append(MKMapItem(placemark: mkPlacemark))
                 }
             }
-            completion(items: items, error: error)
-        })
+            completion(items, error)
+        }
     }
 }

@@ -8,33 +8,33 @@
 
 import CoreLocation
 
-public typealias ORCurrentLocationDetectorCompletion = (location: CLLocation?) -> Void
+public typealias ORCurrentLocationDetectorCompletion = (_ location: CLLocation?) -> Void
 
-@objc public class ORCurrentLocationDetector: NSObject, CLLocationManagerDelegate {
+@objc open class ORCurrentLocationDetector: NSObject, CLLocationManagerDelegate {
     
-    private lazy var locationManager = CLLocationManager()
+    fileprivate lazy var locationManager = CLLocationManager()
     
-    private var maxTimeToWaitDetection: NSTimeInterval?
-    private var completion: ORCurrentLocationDetectorCompletion?
+    fileprivate var maxTimeToWaitDetection: TimeInterval?
+    fileprivate var completion: ORCurrentLocationDetectorCompletion?
     
-    private var detectionAwaitingTimer: NSTimer?
+    fileprivate var detectionAwaitingTimer: Timer?
 
     @objc public override init() {
         super.init()
         locationManager.delegate = self
     }
     
-    @objc public func detect(desiredAccuracy desiredAccuracy: CLLocationAccuracy = kCLLocationAccuracyNearestTenMeters, maxTimeToWaitDetection: NSTimeInterval = NSTimeInterval.infinity, completion: ORCurrentLocationDetectorCompletion) {
-        self.maxTimeToWaitDetection = maxTimeToWaitDetection != NSTimeInterval.infinity ? maxTimeToWaitDetection : nil
+    @objc open func detect(desiredAccuracy: CLLocationAccuracy = kCLLocationAccuracyNearestTenMeters, maxTimeToWaitDetection: TimeInterval = TimeInterval.infinity, completion: @escaping ORCurrentLocationDetectorCompletion) {
+        self.maxTimeToWaitDetection = maxTimeToWaitDetection != TimeInterval.infinity ? maxTimeToWaitDetection : nil
         self.completion = completion
         
         locationManager.desiredAccuracy = desiredAccuracy
 
         let authStatus = CLLocationManager.authorizationStatus()
         switch authStatus {
-        case .NotDetermined:
+        case .notDetermined:
             locationManager.requestWhenInUseAuthorization()
-        case .Restricted, .Denied:
+        case .restricted, .denied:
             onFail()
             return
         default:
@@ -43,23 +43,23 @@ public typealias ORCurrentLocationDetectorCompletion = (location: CLLocation?) -
         locationManager.startUpdatingLocation()
     }
     
-    private func onFail() {
+    fileprivate func onFail() {
         callCompletion(nil)
     }
 
-    private func callCompletion(location: CLLocation?) {
+    fileprivate func callCompletion(_ location: CLLocation?) {
         locationManager.stopUpdatingLocation()
-        completion?(location: location)
+        completion?(location)
         completion = nil
     }
 
-    private func startTimerIfNeeded() {
-        if let interval = maxTimeToWaitDetection where detectionAwaitingTimer == nil {
-            detectionAwaitingTimer = NSTimer.scheduledTimerWithTimeInterval(interval, target: self, selector: #selector(callCompletionByTimer), userInfo: nil, repeats: false)
+    fileprivate func startTimerIfNeeded() {
+        if let interval = maxTimeToWaitDetection , detectionAwaitingTimer == nil {
+            detectionAwaitingTimer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: #selector(callCompletionByTimer), userInfo: nil, repeats: false)
         }
     }
     
-    @objc private func callCompletionByTimer() {
+    @objc fileprivate func callCompletionByTimer() {
         detectionAwaitingTimer?.invalidate()
         detectionAwaitingTimer = nil
         onFail()
@@ -67,13 +67,13 @@ public typealias ORCurrentLocationDetectorCompletion = (location: CLLocation?) -
     
     // MARK: - CLLocationManagerDelegate
     
-    public func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+    open func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
 //        print("CLLocationManager status: \(status.rawValue)")
         switch status {
-        case .Restricted, .Denied:
+        case .restricted, .denied:
             onFail()
             return
-        case .AuthorizedAlways, .AuthorizedWhenInUse:
+        case .authorizedAlways, .authorizedWhenInUse:
             startTimerIfNeeded()
             return
         default:
@@ -81,10 +81,10 @@ public typealias ORCurrentLocationDetectorCompletion = (location: CLLocation?) -
         }
     }
     
-    public func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+    open func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
 //        print("CLLocationManager error:\n \(error.description)")
         
-        guard let clErr = CLError(rawValue: error.code) where clErr == .LocationUnknown else {
+        guard let clErr = CLError.Code(rawValue: error._code) , clErr == .locationUnknown else {
             // do nothing
             return
         }
@@ -92,7 +92,7 @@ public typealias ORCurrentLocationDetectorCompletion = (location: CLLocation?) -
         onFail()
     }
     
-    public func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    open func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location = locations.last
 //        print("CLLocationManager location: \(location)")
         callCompletion(location)
