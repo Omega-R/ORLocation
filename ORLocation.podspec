@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ORLocation'
-  s.version          = '3.0.0'
+  s.version          = '3.1.0'
   s.summary          = 'ORLocation - helpers to work with location services, etc.'
 
 # This description is used to generate tags and improve search results.
@@ -37,5 +37,4 @@ ORMapsHelper - mapItemWithCoordinate & mapItemsForAddress."
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'CoreLocation', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

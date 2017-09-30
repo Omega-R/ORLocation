@@ -7,18 +7,17 @@
 //
 
 import UIKit
+import ORLocation
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var labelCoord: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        ORCurrentLocationDetector.shared.detect { (loc) in
+            self.labelCoord.text = loc != nil ? "\(loc!)" : "nil"
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
-

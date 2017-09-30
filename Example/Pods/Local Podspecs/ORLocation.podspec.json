@@ -1,6 +1,6 @@
 {
   "name": "ORLocation",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "summary": "ORLocation - helpers to work with location services, etc.",
   "description": "ORCurrentLocationDetector - simple way to detect current user location with completion block.\nORMapsHelper - mapItemWithCoordinate & mapItemsForAddress.",
   "homepage": "https://bitbucket.org/omegarinc/orlocation",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://bitbucket.org/omegarinc/orlocation.git",
-    "tag": "3.0.0"
+    "tag": "3.1.0"
   },
   "platforms": {
     "ios": "8.0"

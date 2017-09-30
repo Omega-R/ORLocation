@@ -12,6 +12,8 @@ public typealias ORCurrentLocationDetectorCompletion = (_ location: CLLocation?)
 
 @objc open class ORCurrentLocationDetector: NSObject, CLLocationManagerDelegate {
     
+    open static let shared = ORCurrentLocationDetector()
+
     fileprivate lazy var locationManager = CLLocationManager()
     
     fileprivate var maxTimeToWaitDetection: TimeInterval?
