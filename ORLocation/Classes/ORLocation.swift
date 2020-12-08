@@ -10,7 +10,7 @@ import CoreLocation
 
 open class ORLocation: NSObject, CLLocationManagerDelegate {
     
-    open static let shared = ORLocation()
+    public static let shared = ORLocation()
     
     var locationManager: CLLocationManager!
     

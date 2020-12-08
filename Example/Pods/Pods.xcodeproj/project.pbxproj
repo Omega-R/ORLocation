@@ -34,16 +34,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		111A3F221A8E512F5DD8224889B05BEE /* Pods-ORLocation_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ORLocation_Example.modulemap"; sourceTree = "<group>"; };
+		111A3F221A8E512F5DD8224889B05BEE /* Pods-ORLocation_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ORLocation_Example.modulemap"; sourceTree = "<group>"; };
 		1B01CD2256829B41D3BEFB1D25702116 /* ORLocation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ORLocation-dummy.m"; sourceTree = "<group>"; };
-		1B374D86789B16BCD58CBEAD113BAF7F /* Pods-ORLocation_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ORLocation_Tests.modulemap"; sourceTree = "<group>"; };
+		1B374D86789B16BCD58CBEAD113BAF7F /* Pods-ORLocation_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ORLocation_Tests.modulemap"; sourceTree = "<group>"; };
 		30A43D0041CF7FCFEE68C8D0829E1C77 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3466DCEEAF45BCB45D24FD58C0F87AD7 /* Pods_ORLocation_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ORLocation_Example.framework; path = "Pods-ORLocation_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3818A59CE68FE71CD8E04DF1AE0FC8EE /* Pods_ORLocation_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ORLocation_Tests.framework; path = "Pods-ORLocation_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3466DCEEAF45BCB45D24FD58C0F87AD7 /* Pods_ORLocation_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ORLocation_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3818A59CE68FE71CD8E04DF1AE0FC8EE /* Pods_ORLocation_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ORLocation_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F2F482A360CDC1294EDCDBCD906BE49 /* Pods-ORLocation_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ORLocation_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		460A02A4E84AB9A2ACDEF92F591FEFE3 /* ORLocation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ORLocation.xcconfig; sourceTree = "<group>"; };
 		52E8ACE99AD9699ADD138D30B66140D1 /* ORLocation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ORLocation-prefix.pch"; sourceTree = "<group>"; };
-		57076D071AE024B41ABA7C1DE8BDE8D7 /* ORLocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ORLocation.framework; path = ORLocation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57076D071AE024B41ABA7C1DE8BDE8D7 /* ORLocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ORLocation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EFED71F047F892E9780679489353597 /* Pods-ORLocation_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ORLocation_Tests-dummy.m"; sourceTree = "<group>"; };
 		619351B5E44F94C8B47B53B331F04763 /* Pods-ORLocation_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ORLocation_Example-resources.sh"; sourceTree = "<group>"; };
 		61D8728A4822711518A795BC597BC203 /* ORCurrentLocationDetector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ORCurrentLocationDetector.swift; path = ORLocation/Classes/ORCurrentLocationDetector.swift; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		8A3B07E3AECC3E7457CF61D150B812EF /* Pods-ORLocation_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ORLocation_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		8D7B3EC45C849EA5F840DBBB196AF0F2 /* Pods-ORLocation_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ORLocation_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		90E5C9869428A87BD8811DAAB3F7C68B /* ORLocation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ORLocation-umbrella.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94E6E60B8526767CA333EA89AC57EC8D /* Pods-ORLocation_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ORLocation_Example-umbrella.h"; sourceTree = "<group>"; };
 		A3FD236FCEAC2AC8EF2A256962DCB4C0 /* Pods-ORLocation_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ORLocation_Tests-umbrella.h"; sourceTree = "<group>"; };
 		A44A1E9175DC4EB87FE3C696276F49BD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 		E945CC56983903F64E7E7DDE32F0B32E /* Pods-ORLocation_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ORLocation_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		EC281C8F64E03570767103A76A9A003F /* Pods-ORLocation_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ORLocation_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		EE27DE43761661819F9088CC2B4A9ABD /* Pods-ORLocation_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ORLocation_Tests-resources.sh"; sourceTree = "<group>"; };
-		F195091241C301804CD91B4540211154 /* ORLocation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ORLocation.modulemap; sourceTree = "<group>"; };
+		F195091241C301804CD91B4540211154 /* ORLocation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ORLocation.modulemap; sourceTree = "<group>"; };
 		FBD9A702F2B956F34C9786931BBAE33E /* Pods-ORLocation_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ORLocation_Example-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -309,14 +309,20 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+					FA7ED8EB67026B0361CB90075CE2B06F = {
+						LastSwiftMigration = 1020;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
 			productRefGroup = E9666E14C843D774FE825F6EBB8E46E6 /* Products */;
@@ -374,6 +380,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -384,6 +391,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -391,6 +399,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -419,7 +428,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -478,7 +487,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ORLocation/ORLocation-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ORLocation/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ORLocation/ORLocation.modulemap";
 				PRODUCT_NAME = ORLocation;
@@ -486,7 +495,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -543,7 +552,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ORLocation/ORLocation-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ORLocation/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ORLocation/ORLocation.modulemap";
 				PRODUCT_NAME = ORLocation;
@@ -551,7 +560,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -563,6 +572,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -573,6 +583,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -580,6 +591,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -605,11 +617,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;

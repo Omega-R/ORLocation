@@ -13,12 +13,12 @@ public typealias ORGeoSearchResponseBlock = (_ items: [MKMapItem]?, _ error: Err
 
 @objc open class ORMapsHelper: NSObject {
     
-    open static func mapItemWithCoordinate(_ coordinate: CLLocationCoordinate2D, addressInfo info:[String: String]?) -> MKMapItem {
+    public static func mapItemWithCoordinate(_ coordinate: CLLocationCoordinate2D, addressInfo info:[String: String]?) -> MKMapItem {
         let mark = MKPlacemark(coordinate: coordinate, addressDictionary: info)
         return MKMapItem(placemark: mark)
     }
     
-    open static func mapItemsForAddress(_ address: String, completion: @escaping ORGeoSearchResponseBlock) {
+    public static func mapItemsForAddress(_ address: String, completion: @escaping ORGeoSearchResponseBlock) {
         let geocoder = CLGeocoder()
         
         geocoder.geocodeAddressString(address) { (placemarks, error) in
