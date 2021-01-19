@@ -2,22 +2,23 @@
 //  ViewController.swift
 //  ORLocation
 //
-//  Created by Maxim Soloviev on 09/11/2016.
-//  Copyright (c) 2016 Maxim Soloviev. All rights reserved.
+//  Created by Egor Lindberg on 01/19/2021.
+//  Copyright (c) 2021 Egor Lindberg. All rights reserved.
 //
 
 import UIKit
-import ORLocation
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var labelCoord: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        ORCurrentLocationDetector.shared.detect { (loc) in
-            self.labelCoord.text = loc != nil ? "\(loc!)" : "nil"
-        }
+        // Do any additional setup after loading the view, typically from a nib.
     }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
 }
+

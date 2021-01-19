@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  ORLocation
 //
-//  Created by Maxim Soloviev on 09/11/2016.
-//  Copyright (c) 2016 Maxim Soloviev. All rights reserved.
+//  Created by Egor Lindberg on 01/19/2021.
+//  Copyright (c) 2021 Egor Lindberg. All rights reserved.
 //
 
 import UIKit
